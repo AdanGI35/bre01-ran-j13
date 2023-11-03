@@ -1,9 +1,11 @@
 window.addEventListener("DOMContentLoaded", function(){
-    let paragraphe = document.querySelector("p");
-    let link = document.createElement("a");
+    let p = document.querySelector("body > p");
     
-    link.text ="ici";
-    link.href="https://google.com";
-    
-    paragraphe.appendChild(link);
+    let a = document.createElement("a");
+    let aText = document.createTextNode("ici");
+    a.appendChild(aText);
+
+    a.setAttribute("href", "https://google.com");
+
+    p.appendChild(a);
 });

@@ -1,9 +1,9 @@
 window.addEventListener("DOMContentLoaded", function(){
-    // votre code ici
-    
+
         
         
-        let deuxiemeSection = document.querySelectorAll('section')[1];
+        let deuxiemeSection = document.querySelector("body > section:last-of-type");
+
 
 
         let titreSection = document.createElement('h2');
